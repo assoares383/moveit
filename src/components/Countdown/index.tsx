@@ -6,7 +6,7 @@ import styles from '../../styles/components/Countdown.module.css';
 let countdownTimeout: NodeJS.Timeout;
 
 export default function Countdown() {
-  const { startNewChallenge } = useContext(ChallengesContext)
+  const { startNewChallenge } = useContext(ChallengesContext);
 
   const [time, setTime] = useState(0.1 * 60);
   const [isActive, setIsActive] = useState(false);
